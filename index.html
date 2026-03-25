@@ -98,7 +98,149 @@ body {
 }
 
 .vertical-timeline {
-... (147 lines left)
+    border-left: 2px solid var(--primary-red);
+    padding-left: 20px;
+    margin-top: 20px;
+}
 
-message.txt
-7 KB
+.vt-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* The red circle on the timeline */
+.vt-item::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 2px solid var(--primary-red);
+    border-radius: 50%;
+}
+
+/* Team Rules Box */
+.rules-box {
+    border: 1px solid var(--border-gray);
+    background: var(--bg-gray);
+}
+
+.rule-item {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-gray);
+}
+     </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <img src="./pictures/user1.png" alt="Profile" class="profile-circle">
+                <div class="hero-text">
+                    <span class="label">PROFESSOR | <span class="sub-label">Computer Science</span></span>
+                    <h1>Your Name</h1>
+                    <p class="status">Current Status / Interested Role</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Publications</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        
+        <aside class="sidebar">
+            <section class="sidebar-block">
+                <h3>CONTACT</h3>
+                <p>📧 email@example.com</p>
+                <p>🌐 portfolio.github.io</p>
+            </section>
+
+            <section class="sidebar-block">
+                <h3>EXPERTISE</h3>
+                <div class="tags">
+                    <span class="tag">Cloud Computing</span>
+                    <span class="tag">Web Technology</span>
+                </div>
+            </section>
+
+            <section class="sidebar-block">
+                <h3>ACADEMIC POSITIONS</h3>
+                <div class="vertical-timeline">
+                    <div class="vt-item">
+                        <span class="year">2024-test</span>
+                        <strong>Professor</strong>
+                        <p>CS Department</p>
+                    </div>
+                    <div class="vt-item">
+                        <span class="year">2024-Present</span>
+                        <strong>Professor</strong>
+                        <p>CS Department</p>
+                    </div>
+                    <div class="vt-item">
+                        <span class="year">2020-2024</span>
+                        <strong>Director</strong>
+                        <p>Tech Lab</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <main class="content">
+            <section>
+                <h2>Overview</h2>
+                <p>Detailed message about who you are and what you've achieved goes here...</p>
+                <ul>
+                    <li>Key accomplishment one</li>
+                    <li>Key accomplishment two</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Team Environment</h2>
+                <div class="rules-box">
+                    <div class="rule-item">In all discussions as a team, we are peers.</div>
+                    <div class="rule-item">I will operate with integrity and candor at all times.</div>
+                </div>
+            </section>
+
+            <!-- Added Classes Section -->
+            <section>
+                <h2>Classes</h2>
+                <ul>
+                    <li><strong>CS101:</strong> Introduction to Computer Science</li>
+                    <li><strong>CS201:</strong> Data Structures</li>
+                    <li><strong>CS301:</strong> Web Development</li>
+                </ul>
+            </section>
+
+            <!-- Added Projects Section -->
+            <section>
+                <h2>Projects</h2>
+                <div class="rules-box">
+                    <div class="rule-item">
+                        <strong>Portfolio Website</strong>
+                        <p>Personal website showcasing skills, projects, and experience.</p>
+                    </div>
+                    <div class="rule-item">
+                        <strong>Cloud App</strong>
+                        <p>Built a scalable cloud-based application using modern tools.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
