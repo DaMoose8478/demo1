@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Steve Style</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        :root {
+    --primary-red: #c41230;
+    --bg-gray: #f9f9f9;
+    --border-gray: #ddd;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./pictures/user1.png.jpg') no-repeat center center/cover;
+    height: 300px;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Darkens image to make text readable */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.profile-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-right: 30px;
+}
+
+.label { font-weight: bold; color: var(--primary-red); text-transform: uppercase; }
+.sub-label { color: white; text-transform: none; font-weight: normal; }
+.status { font-style: italic; color: #ccc; }
+
+/* Navbar */
+.navbar {
+    border-bottom: 2px solid var(--border-gray);
+    padding: 0 10%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0; padding: 0;
+}
+
+.navbar li {
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.navbar li.active {
+    border-bottom: 3px solid var(--primary-red);
+    color: var(--primary-red);
+    font-weight: bold;
+}
+
+.navbar a { text-decoration: none; color: #555; }
+
+/* Grid Layout */
+.main-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    padding: 40px 10%;
+}
+
+/* Sidebar & Timeline */
+.sidebar h3 {
+    font-size: 0.9rem;
+    color: #444;
+    border-bottom: 1px solid var(--border-gray);
+    padding-bottom: 5px;
+}
+
+.tag {
+    background: #00c853;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.vertical-timeline {
+... (147 lines left)
+
+message.txt
+7 KB
